@@ -6,7 +6,6 @@
 //
 
 #import "MAPrestoClient.h"
-#import "NSDictionary+MAPrestoClient.h"
 
 @interface MAPrestoClient()
 
@@ -33,15 +32,6 @@ static MAPrestoClient *instance;
 }
 
 
-- (void)example:(void (^)(id))completion{
-  NSDictionary *params = @{
-                           @"example":@0,
-                           } ;
-  [[MAHttpClient client]get:[@"example/example" urlPathComponents]
-                     params:[params presto]
-                      class:[MAModel class]
-                 completion:completion];
-}
 
 
 

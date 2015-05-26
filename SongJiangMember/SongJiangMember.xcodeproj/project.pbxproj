@@ -57,6 +57,13 @@
 		1AF94E981B140CAD0052075B /* MAModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF94E6A1B140CAD0052075B /* MAModel.m */; };
 		1AF94E991B140CAD0052075B /* MAObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF94E6C1B140CAD0052075B /* MAObject.m */; };
 		1AF94E9A1B140CAD0052075B /* MAPrestoClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF94E6E1B140CAD0052075B /* MAPrestoClient.m */; };
+		32D38FC81B1446D400962436 /* MAPrestoClient+Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D38FC71B1446D400962436 /* MAPrestoClient+Account.m */; };
+		32D38FCF1B145EAD00962436 /* MAPrestoClient+Trade.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D38FCE1B145EAD00962436 /* MAPrestoClient+Trade.m */; };
+		32D38FD21B1462EE00962436 /* MAPrestoClient+CitySchool_info.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D38FD11B1462EE00962436 /* MAPrestoClient+CitySchool_info.m */; };
+		32D38FD51B146C1400962436 /* MAPrestoClient+Bank.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D38FD41B146C1400962436 /* MAPrestoClient+Bank.m */; };
+		32D38FD81B14722E00962436 /* MAPrestoClient+OrderRepay.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D38FD71B14722E00962436 /* MAPrestoClient+OrderRepay.m */; };
+		32D38FDB1B1475E000962436 /* MAPrestoClient+Shop.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D38FDA1B1475E000962436 /* MAPrestoClient+Shop.m */; };
+		32D38FE11B147ED500962436 /* MAPrestoClient+Chat.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D38FE01B147ED500962436 /* MAPrestoClient+Chat.m */; };
 		9637E076379BDA027CAC4B34 /* libPods-SongJiangMember.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D0E794A3A8FACF869DFF05 /* libPods-SongJiangMember.a */; };
 /* End PBXBuildFile section */
 
@@ -175,6 +182,21 @@
 		1AF94E6E1B140CAD0052075B /* MAPrestoClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAPrestoClient.m; sourceTree = "<group>"; };
 		1AF94E9B1B140CFE0052075B /* SJMPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJMPrefixHeader.pch; sourceTree = "<group>"; };
 		1BAE6E8194B67F251F716D39 /* Pods-SongJiangMember.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SongJiangMember.release.xcconfig"; path = "Pods/Target Support Files/Pods-SongJiangMember/Pods-SongJiangMember.release.xcconfig"; sourceTree = "<group>"; };
+		32D38FC61B1446D400962436 /* MAPrestoClient+Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MAPrestoClient+Account.h"; path = "SJMExtension/Network/MAPrestoClient+Account.h"; sourceTree = "<group>"; };
+		32D38FC71B1446D400962436 /* MAPrestoClient+Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MAPrestoClient+Account.m"; path = "SJMExtension/Network/MAPrestoClient+Account.m"; sourceTree = "<group>"; };
+		32D38FC91B144B6700962436 /* SJMExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJMExtension.h; sourceTree = "<group>"; };
+		32D38FCD1B145EAD00962436 /* MAPrestoClient+Trade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MAPrestoClient+Trade.h"; sourceTree = "<group>"; };
+		32D38FCE1B145EAD00962436 /* MAPrestoClient+Trade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MAPrestoClient+Trade.m"; sourceTree = "<group>"; };
+		32D38FD01B1462EE00962436 /* MAPrestoClient+CitySchool_info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MAPrestoClient+CitySchool_info.h"; sourceTree = "<group>"; };
+		32D38FD11B1462EE00962436 /* MAPrestoClient+CitySchool_info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MAPrestoClient+CitySchool_info.m"; sourceTree = "<group>"; };
+		32D38FD31B146C1400962436 /* MAPrestoClient+Bank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MAPrestoClient+Bank.h"; sourceTree = "<group>"; };
+		32D38FD41B146C1400962436 /* MAPrestoClient+Bank.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MAPrestoClient+Bank.m"; sourceTree = "<group>"; };
+		32D38FD61B14722E00962436 /* MAPrestoClient+OrderRepay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MAPrestoClient+OrderRepay.h"; sourceTree = "<group>"; };
+		32D38FD71B14722E00962436 /* MAPrestoClient+OrderRepay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MAPrestoClient+OrderRepay.m"; sourceTree = "<group>"; };
+		32D38FD91B1475E000962436 /* MAPrestoClient+Shop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MAPrestoClient+Shop.h"; sourceTree = "<group>"; };
+		32D38FDA1B1475E000962436 /* MAPrestoClient+Shop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MAPrestoClient+Shop.m"; sourceTree = "<group>"; };
+		32D38FDF1B147ED500962436 /* MAPrestoClient+Chat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MAPrestoClient+Chat.h"; sourceTree = "<group>"; };
+		32D38FE01B147ED500962436 /* MAPrestoClient+Chat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MAPrestoClient+Chat.m"; sourceTree = "<group>"; };
 		80D0E794A3A8FACF869DFF05 /* libPods-SongJiangMember.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SongJiangMember.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0D0F3BC9AEFE0A74D9C1AE3 /* Pods-SongJiangMember.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SongJiangMember.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SongJiangMember/Pods-SongJiangMember.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -221,6 +243,7 @@
 		1A06929C1B12BD0700BB583C /* SongJiangMember */ = {
 			isa = PBXGroup;
 			children = (
+				32D38FC41B14462600962436 /* SJMExtension */,
 				1AF94E111B140CAD0052075B /* App */,
 				1AF94E6F1B140CAD0052075B /* Model */,
 				1AF94E711B140CAD0052075B /* View */,
@@ -477,6 +500,36 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		32D38FC41B14462600962436 /* SJMExtension */ = {
+			isa = PBXGroup;
+			children = (
+				32D38FC51B14463A00962436 /* Network */,
+				32D38FC91B144B6700962436 /* SJMExtension.h */,
+			);
+			name = SJMExtension;
+			sourceTree = "<group>";
+		};
+		32D38FC51B14463A00962436 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				32D38FC61B1446D400962436 /* MAPrestoClient+Account.h */,
+				32D38FC71B1446D400962436 /* MAPrestoClient+Account.m */,
+				32D38FCD1B145EAD00962436 /* MAPrestoClient+Trade.h */,
+				32D38FCE1B145EAD00962436 /* MAPrestoClient+Trade.m */,
+				32D38FD01B1462EE00962436 /* MAPrestoClient+CitySchool_info.h */,
+				32D38FD11B1462EE00962436 /* MAPrestoClient+CitySchool_info.m */,
+				32D38FD31B146C1400962436 /* MAPrestoClient+Bank.h */,
+				32D38FD41B146C1400962436 /* MAPrestoClient+Bank.m */,
+				32D38FD61B14722E00962436 /* MAPrestoClient+OrderRepay.h */,
+				32D38FD71B14722E00962436 /* MAPrestoClient+OrderRepay.m */,
+				32D38FD91B1475E000962436 /* MAPrestoClient+Shop.h */,
+				32D38FDA1B1475E000962436 /* MAPrestoClient+Shop.m */,
+				32D38FDF1B147ED500962436 /* MAPrestoClient+Chat.h */,
+				32D38FE01B147ED500962436 /* MAPrestoClient+Chat.m */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
 		8240551F289CA65AD95162E8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -641,8 +694,10 @@
 				1AF94E961B140CAD0052075B /* MAError.m in Sources */,
 				1AF94E811B140CAD0052075B /* UIWebView+Extra.m in Sources */,
 				1A5E99921B1451C600D2FA74 /* SJMAppLauncher+Dispatch.m in Sources */,
+				32D38FC81B1446D400962436 /* MAPrestoClient+Account.m in Sources */,
 				1AF94E851B140CAD0052075B /* MACameraManager+AuthorizationExtra.m in Sources */,
 				1AF94E921B140CAD0052075B /* MABundleManager.m in Sources */,
+				32D38FD81B14722E00962436 /* MAPrestoClient+OrderRepay.m in Sources */,
 				1AF94E801B140CAD0052075B /* UIViewController+Extra.m in Sources */,
 				1AF94E8D1B140CAD0052075B /* MATabbarController.m in Sources */,
 				1AF94E7A1B140CAD0052075B /* UIImage+Extra.m in Sources */,
@@ -656,18 +711,23 @@
 				1AF94E871B140CAD0052075B /* MACameraManager+FocusIntrestPointExtra.m in Sources */,
 				1AF94E821B140CAD0052075B /* MACameraController.m in Sources */,
 				1AF94E8F1B140CAD0052075B /* NSBundle+MAExtra.m in Sources */,
+				32D38FDB1B1475E000962436 /* MAPrestoClient+Shop.m in Sources */,
 				1AF94E791B140CAD0052075B /* UIFont+Extra.m in Sources */,
 				1AF94E941B140CAD0052075B /* MAZonesManager.m in Sources */,
+				32D38FD21B1462EE00962436 /* MAPrestoClient+CitySchool_info.m in Sources */,
 				1AF94E891B140CAD0052075B /* MACameraView.m in Sources */,
 				1AF94E8C1B140CAD0052075B /* MANavigationController.m in Sources */,
 				1AF94E9A1B140CAD0052075B /* MAPrestoClient.m in Sources */,
 				1AF94E761B140CAD0052075B /* UIButton+Extra.m in Sources */,
+				32D38FD51B146C1400962436 /* MAPrestoClient+Bank.m in Sources */,
 				1AF94E721B140CAD0052075B /* NSDate+Extra.m in Sources */,
 				1AF94E7F1B140CAD0052075B /* UIView+Extra.m in Sources */,
 				1AF94E8B1B140CAD0052075B /* MAListViewController.m in Sources */,
 				1AF94E741B140CAD0052075B /* NSString+Extra.m in Sources */,
+				32D38FCF1B145EAD00962436 /* MAPrestoClient+Trade.m in Sources */,
 				1AF94E931B140CAD0052075B /* MAColorManager.m in Sources */,
 				1A5E998F1B14511B00D2FA74 /* SJMAppLauncher.m in Sources */,
+				32D38FE11B147ED500962436 /* MAPrestoClient+Chat.m in Sources */,
 				1AF94E771B140CAD0052075B /* UIColor+HexExtra.m in Sources */,
 				1AF94E841B140CAD0052075B /* MACameraEncoder.m in Sources */,
 				1AF94E8E1B140CAD0052075B /* MAViewController.m in Sources */,
