@@ -7,7 +7,21 @@
 
 #import "MAHttpClient.h"
 #import <AFNetworking/AFNetworkActivityIndicatorManager.h>
-#define MA_HTTP_CLIENT_HOST_URL @"http://112.126.82.29"
+
+
+
+#ifdef __SJM_MODE_DEBUG__
+
+//debug
+#define MA_HTTP_CLIENT_HOST_URL @""
+
+#else
+
+//release
+#define MA_HTTP_CLIENT_HOST_URL @""
+
+#endif
+
 #define MA_HTTP_CLIENT_API @"/api/v1"
 
 @interface MAHttpClient(){

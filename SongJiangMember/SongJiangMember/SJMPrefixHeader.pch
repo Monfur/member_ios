@@ -4,6 +4,23 @@
 #warning "This project uses features only available in iOS SDK 3.0 and later."
 #endif
 
+/*
+ 
+ NOTE:
+ if in release mode
+ you should comment this
+ 
+ @zhouyu
+ 
+ */
+
+#ifndef __SJM_MODE_DEBUG__
+
+#define __SJM_MODE_DEBUG__
+
+#endif
+
+
 #ifdef __OBJC__
 
 //==========Cocoa ============
