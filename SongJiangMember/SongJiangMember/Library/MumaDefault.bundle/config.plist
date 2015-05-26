@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Color</key>
+	<dict>
+		<key>default_fore_color</key>
+		<string>0xecce2e</string>
+		<key>default_back_color</key>
+		<string>0xf4f4f4</string>
+		<key>default_line_stroked_color</key>
+		<string>0xd2d2d2</string>
+		<key>default_button_dark_color</key>
+		<string>0x9f9f9f</string>
+		<key>default_button_light_color</key>
+		<string>0xffffff</string>
+	</dict>
+</dict>
+</plist>
