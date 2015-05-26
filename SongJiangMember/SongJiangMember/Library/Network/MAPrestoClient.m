@@ -31,11 +31,7 @@ static MAPrestoClient *instance;
   [[MAHttpClient client] cancelAllOperation];
 }
 
--(void)prepareData{
-    
-    //[self example:nil];
-    
-}
+
 
 
 
