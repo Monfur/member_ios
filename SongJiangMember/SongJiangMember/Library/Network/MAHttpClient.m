@@ -43,6 +43,8 @@ static MAHttpClient *instance;
 - (AFHTTPRequestOperationManager *) manager{
   if (!_manager) {
     [self setActivityIndicatorVisible:YES];
+    _manager = [AFHTTPRequestOperationManager manager];
+    _manager.requestSerializer.timeoutInterval = 30;//time out limit 30s
   }
   return [AFHTTPRequestOperationManager manager];
 }
@@ -101,6 +103,12 @@ static MAHttpClient *instance;
   self.baseUrl = [NSString stringWithFormat:@"%@%@",url,self.api];
 }
 
+#pragma mark - cancal all operation
+
+- (void)cancelAllOperation{
+  [self.manager.operationQueue cancelAllOperations];
+}
+
 #pragma mark - get
 - (void)get:(NSString *) url{
   [self get:url completion:nil];
@@ -117,7 +125,9 @@ static MAHttpClient *instance;
   [self get:url params:params class:class completion:completion error:nil];
 }
 
-- (void)get:(NSString *)url params:(NSDictionary *)params class:(Class)class completion:(void (^)(id))completion error:(void (^)(MAError *)) error{
+- (void)get:(NSString *)url params:(NSDictionary *)params class:(Class)class completion:(void (^)(id))completion
+      error:(void (^)(MAError *)) error{
+  
   NSString *getUrl = [NSString stringWithFormat:@"%@%@",self.baseUrl,url];
   [self.manager GET:getUrl parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
     if ([class isSubclassOfClass:[MAModel class]]) {
@@ -160,6 +170,7 @@ static MAHttpClient *instance;
 }
 
 - (void)post:(NSString *)url params:(NSDictionary *)params class:(Class)class completion:(void (^)(id))completion error:(void (^)(MAError *))error{
+  
   NSString *postUrl = [NSString stringWithFormat:@"%@%@",self.baseUrl,url];
   [self.manager POST:postUrl parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
     if ([class isSubclassOfClass:[MAModel class]]) {

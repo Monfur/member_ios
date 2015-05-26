@@ -20,6 +20,7 @@
 - (void)reset;
 - (void)setAPI:(NSString *)api;
 - (void)setHostUrl:(NSString *)url;
+- (void)cancelAllOperation;
 
 // get
 - (void)get:(NSString *) url;

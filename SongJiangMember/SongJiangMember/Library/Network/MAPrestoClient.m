@@ -25,6 +25,12 @@ static MAPrestoClient *instance;
   return instance;
 }
 
+#pragma mark - cancel all network operation
+
+- (void)cancelAllOperation{
+  
+  [[MAHttpClient client] cancelAllOperation];
+}
 
 - (void)example:(void (^)(id))completion{
   NSDictionary *params = @{
