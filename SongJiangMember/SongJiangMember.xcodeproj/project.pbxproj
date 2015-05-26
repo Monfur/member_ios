@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		1A0692A01B12BD0700BB583C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A06929F1B12BD0700BB583C /* main.m */; };
-		1A0692A31B12BD0700BB583C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0692A21B12BD0700BB583C /* AppDelegate.m */; };
+		1A0692A31B12BD0700BB583C /* SJMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0692A21B12BD0700BB583C /* SJMAppDelegate.m */; };
 		1A0692A61B12BD0700BB583C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0692A51B12BD0700BB583C /* ViewController.m */; };
-		1A0692A91B12BD0700BB583C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A0692A71B12BD0700BB583C /* Main.storyboard */; };
 		1A0692AB1B12BD0700BB583C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A0692AA1B12BD0700BB583C /* Images.xcassets */; };
-		1A0692AE1B12BD0700BB583C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A0692AC1B12BD0700BB583C /* LaunchScreen.xib */; };
 		1A0692BA1B12BD0700BB583C /* SongJiangMemberTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0692B91B12BD0700BB583C /* SongJiangMemberTests.m */; };
 		1A5E99881B141D3800D2FA74 /* NSDictionary+MAPrestoClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5E99871B141D3800D2FA74 /* NSDictionary+MAPrestoClient.m */; };
+		1A5E998F1B14511B00D2FA74 /* SJMAppLauncher.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5E998B1B14511B00D2FA74 /* SJMAppLauncher.m */; };
+		1A5E99921B1451C600D2FA74 /* SJMAppLauncher+Dispatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5E99911B1451C600D2FA74 /* SJMAppLauncher+Dispatch.m */; };
+		1A5E99951B14520C00D2FA74 /* SJMAppLauncher+Launch.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5E99941B14520C00D2FA74 /* SJMAppLauncher+Launch.m */; };
 		1AF94E721B140CAD0052075B /* NSDate+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF94E151B140CAD0052075B /* NSDate+Extra.m */; };
 		1AF94E731B140CAD0052075B /* NSObject+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF94E171B140CAD0052075B /* NSObject+Extra.m */; };
 		1AF94E741B140CAD0052075B /* NSString+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF94E191B140CAD0052075B /* NSString+Extra.m */; };
@@ -73,18 +74,21 @@
 		1A06929A1B12BD0700BB583C /* SongJiangMember.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SongJiangMember.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A06929E1B12BD0700BB583C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A06929F1B12BD0700BB583C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1A0692A11B12BD0700BB583C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		1A0692A21B12BD0700BB583C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1A0692A11B12BD0700BB583C /* SJMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SJMAppDelegate.h; path = ../SJMAppDelegate.h; sourceTree = "<group>"; };
+		1A0692A21B12BD0700BB583C /* SJMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SJMAppDelegate.m; path = ../SJMAppDelegate.m; sourceTree = "<group>"; };
 		1A0692A41B12BD0700BB583C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		1A0692A51B12BD0700BB583C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		1A0692A81B12BD0700BB583C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1A0692AA1B12BD0700BB583C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		1A0692AD1B12BD0700BB583C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		1A0692B31B12BD0700BB583C /* SongJiangMemberTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SongJiangMemberTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A0692B81B12BD0700BB583C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A0692B91B12BD0700BB583C /* SongJiangMemberTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SongJiangMemberTests.m; sourceTree = "<group>"; };
 		1A5E99861B141D3800D2FA74 /* NSDictionary+MAPrestoClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+MAPrestoClient.h"; sourceTree = "<group>"; };
 		1A5E99871B141D3800D2FA74 /* NSDictionary+MAPrestoClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+MAPrestoClient.m"; sourceTree = "<group>"; };
+		1A5E998A1B14511B00D2FA74 /* SJMAppLauncher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJMAppLauncher.h; sourceTree = "<group>"; };
+		1A5E998B1B14511B00D2FA74 /* SJMAppLauncher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJMAppLauncher.m; sourceTree = "<group>"; };
+		1A5E998E1B14511B00D2FA74 /* SJMAppSettingData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJMAppSettingData.h; sourceTree = "<group>"; };
+		1A5E99911B1451C600D2FA74 /* SJMAppLauncher+Dispatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SJMAppLauncher+Dispatch.m"; sourceTree = "<group>"; };
+		1A5E99941B14520C00D2FA74 /* SJMAppLauncher+Launch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SJMAppLauncher+Launch.m"; sourceTree = "<group>"; };
 		1AF94E141B140CAD0052075B /* NSDate+Extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extra.h"; sourceTree = "<group>"; };
 		1AF94E151B140CAD0052075B /* NSDate+Extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extra.m"; sourceTree = "<group>"; };
 		1AF94E161B140CAD0052075B /* NSObject+Extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extra.h"; sourceTree = "<group>"; };
@@ -223,13 +227,9 @@
 				1AF94E121B140CAD0052075B /* Controller */,
 				1AF94E131B140CAD0052075B /* Extension */,
 				1AF94E351B140CAD0052075B /* Library */,
-				1A0692A11B12BD0700BB583C /* AppDelegate.h */,
-				1A0692A21B12BD0700BB583C /* AppDelegate.m */,
 				1A0692A41B12BD0700BB583C /* ViewController.h */,
 				1A0692A51B12BD0700BB583C /* ViewController.m */,
-				1A0692A71B12BD0700BB583C /* Main.storyboard */,
 				1A0692AA1B12BD0700BB583C /* Images.xcassets */,
-				1A0692AC1B12BD0700BB583C /* LaunchScreen.xib */,
 				1A06929D1B12BD0700BB583C /* Supporting Files */,
 				1AF94E9B1B140CFE0052075B /* SJMPrefixHeader.pch */,
 			);
@@ -263,9 +263,40 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		1A5E99891B14511B00D2FA74 /* AppLauncher */ = {
+			isa = PBXGroup;
+			children = (
+				1A5E998A1B14511B00D2FA74 /* SJMAppLauncher.h */,
+				1A5E998B1B14511B00D2FA74 /* SJMAppLauncher.m */,
+				1A5E99911B1451C600D2FA74 /* SJMAppLauncher+Dispatch.m */,
+				1A5E99941B14520C00D2FA74 /* SJMAppLauncher+Launch.m */,
+			);
+			path = AppLauncher;
+			sourceTree = "<group>";
+		};
+		1A5E998C1B14511B00D2FA74 /* AppManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AppManager;
+			sourceTree = "<group>";
+		};
+		1A5E998D1B14511B00D2FA74 /* AppSettings */ = {
+			isa = PBXGroup;
+			children = (
+				1A5E998E1B14511B00D2FA74 /* SJMAppSettingData.h */,
+			);
+			path = AppSettings;
+			sourceTree = "<group>";
+		};
 		1AF94E111B140CAD0052075B /* App */ = {
 			isa = PBXGroup;
 			children = (
+				1A0692A11B12BD0700BB583C /* SJMAppDelegate.h */,
+				1A0692A21B12BD0700BB583C /* SJMAppDelegate.m */,
+				1A5E99891B14511B00D2FA74 /* AppLauncher */,
+				1A5E998C1B14511B00D2FA74 /* AppManager */,
+				1A5E998D1B14511B00D2FA74 /* AppSettings */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -546,8 +577,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A0692A91B12BD0700BB583C /* Main.storyboard in Resources */,
-				1A0692AE1B12BD0700BB583C /* LaunchScreen.xib in Resources */,
 				1A0692AB1B12BD0700BB583C /* Images.xcassets in Resources */,
 				1AF94E951B140CAD0052075B /* MumaDefault.bundle in Resources */,
 			);
@@ -605,11 +634,13 @@
 				1AF94E881B140CAD0052075B /* MACameraManager.m in Sources */,
 				1AF94E7C1B140CAD0052075B /* UINavigationController+Extra.m in Sources */,
 				1AF94E751B140CAD0052075B /* UIBarButtonItem+Extra.m in Sources */,
+				1A5E99951B14520C00D2FA74 /* SJMAppLauncher+Launch.m in Sources */,
 				1AF94E981B140CAD0052075B /* MAModel.m in Sources */,
 				1A0692A61B12BD0700BB583C /* ViewController.m in Sources */,
 				1AF94E901B140CAD0052075B /* UIImage+MAExtra.m in Sources */,
 				1AF94E961B140CAD0052075B /* MAError.m in Sources */,
 				1AF94E811B140CAD0052075B /* UIWebView+Extra.m in Sources */,
+				1A5E99921B1451C600D2FA74 /* SJMAppLauncher+Dispatch.m in Sources */,
 				1AF94E851B140CAD0052075B /* MACameraManager+AuthorizationExtra.m in Sources */,
 				1AF94E921B140CAD0052075B /* MABundleManager.m in Sources */,
 				1AF94E801B140CAD0052075B /* UIViewController+Extra.m in Sources */,
@@ -618,7 +649,7 @@
 				1AF94E7E1B140CAD0052075B /* UITextField+Extra.m in Sources */,
 				1AF94E7D1B140CAD0052075B /* UITabBarController+Extra.m in Sources */,
 				1AF94E971B140CAD0052075B /* MAHttpClient.m in Sources */,
-				1A0692A31B12BD0700BB583C /* AppDelegate.m in Sources */,
+				1A0692A31B12BD0700BB583C /* SJMAppDelegate.m in Sources */,
 				1AF94E8A1B140CAD0052075B /* MADataSourceMaker.m in Sources */,
 				1A0692A01B12BD0700BB583C /* main.m in Sources */,
 				1AF94E911B140CAD0052075B /* MAStrokedLine.m in Sources */,
@@ -636,6 +667,7 @@
 				1AF94E8B1B140CAD0052075B /* MAListViewController.m in Sources */,
 				1AF94E741B140CAD0052075B /* NSString+Extra.m in Sources */,
 				1AF94E931B140CAD0052075B /* MAColorManager.m in Sources */,
+				1A5E998F1B14511B00D2FA74 /* SJMAppLauncher.m in Sources */,
 				1AF94E771B140CAD0052075B /* UIColor+HexExtra.m in Sources */,
 				1AF94E841B140CAD0052075B /* MACameraEncoder.m in Sources */,
 				1AF94E8E1B140CAD0052075B /* MAViewController.m in Sources */,
@@ -664,25 +696,6 @@
 			targetProxy = 1A0692B41B12BD0700BB583C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		1A0692A71B12BD0700BB583C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1A0692A81B12BD0700BB583C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		1A0692AC1B12BD0700BB583C /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1A0692AD1B12BD0700BB583C /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1A0692BB1B12BD0700BB583C /* Debug */ = {
@@ -768,6 +781,7 @@
 			baseConfigurationReference = D0D0F3BC9AEFE0A74D9C1AE3 /* Pods-SongJiangMember.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/SongJiangMember/SJMPrefixHeader.pch";
 				INFOPLIST_FILE = SongJiangMember/Info.plist;
@@ -781,6 +795,7 @@
 			baseConfigurationReference = 1BAE6E8194B67F251F716D39 /* Pods-SongJiangMember.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/SongJiangMember/SJMPrefixHeader.pch";
 				INFOPLIST_FILE = SongJiangMember/Info.plist;
