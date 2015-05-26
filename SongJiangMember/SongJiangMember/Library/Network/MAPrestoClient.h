@@ -10,9 +10,9 @@
 @interface MAPrestoClient : MAObject
 
 + (instancetype)prestoClient;
-- (void)cancelAllOperation;
 
-- (void)example:(void (^)(id))completion
+- (void)cancelAllOperation;
+- (void)example:(void (^)(id))completion;
 
 
 @end
