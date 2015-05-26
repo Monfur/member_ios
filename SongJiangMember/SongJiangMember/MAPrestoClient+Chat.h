@@ -12,7 +12,7 @@
 
 //获取聊天记录
 -(void)getChatList:(NSInteger)page
-          PageSize:(NSInteger)pageSize
+          count:(NSInteger)count
         completion:(void (^)(id))completion;
 
 //反馈信息

@@ -10,14 +10,12 @@
 #import "NSDictionary+MAPrestoClient.h"
 @implementation MAPrestoClient (Chat)
 
-//获取聊天记录
 -(void)getChatList:(NSInteger)page
-                   PageSize:(NSInteger)pageSize
-                   completion:(void (^)(id))completion{
+             count:(NSInteger)count
+        completion:(void (^)(id))completion;{
     NSDictionary *params = @{
-                             @"page":[NSString stringWithFormat:@"%d",page],
-                             @"pageSize":[NSString stringWithFormat:@"%d",pageSize],
-                             
+                             @"page":@(page),
+                             @"pageSize":@(count),
                              };
     
     [[MAHttpClient client]post:[@"/msg/list" urlPathComponents]
@@ -27,8 +25,6 @@
     
 }
 
-
-//反馈信息
 -(void)msgInfo:(NSString*)msg
                completion:(void (^)(id))completion{
     
@@ -40,13 +36,6 @@
                         params:[params presto]
                          class:[MAModel class]
                     completion:completion];
-
-    
-    
-    
-    
 }
-
-
 
 @end

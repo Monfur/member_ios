@@ -8,25 +8,22 @@
 
 #import "MAPrestoClient.h"
 
-@interface MAPrestoClient (OrderRepay)
+@interface MAPrestoClient (Bill)
 
 //生成支付宝链接接口
 -(void)OrderRepay:(NSString*)amount
-            Token:(NSString*)token
+            token:(NSString*)token
        completion:(void (^)(id))completion;
 
 
 //按年获取有账单的月份儿
--(void)getBillYear:(NSString*)year
+-(void)getYearBillByYear:(NSString*)year
         completion:(void (^)(id))completion;
 
 //按月取账单
--(void)getBillMonth:(NSString*)year
-              Month:(NSString*)month
+-(void)getMonthBillByYear:(NSString*)year
+              month:(NSString*)month
          completion:(void (^)(id))completion;
-
-
-
 
 
 @end

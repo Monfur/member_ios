@@ -6,33 +6,25 @@
 //  Copyright (c) 2015年 SongJiang. All rights reserved.
 //
 
-#import "MAPrestoClient+CitySchool_info.h"
+#import "MAPrestoClient+School.h"
 #import "NSDictionary+MAPrestoClient.h"
 
-@implementation MAPrestoClient (CitySchool_info)
+@implementation MAPrestoClient (School)
 
-
-
-//获取城市列表
 -(void)getCityList:(NSString*)tradePwd
                    completion:(void (^)(id))completion{
+  
     NSDictionary *params = @{};
                              
-    
     [[MAHttpClient client]post:[@"/city/list" urlPathComponents]
                         params:[params presto]
                          class:[MAModel class]
                     completion:completion];
-    
-    
-    
 }
 
-
-//获取学校列表
 -(void)getSchoolList:(NSString*)Id
-                    Lon:(double)lon
-                    Lat:(double)lat
+                    lon:(double)lon
+                    lat:(double)lat
                     completion:(void (^)(id))completion{
     NSDictionary *params = @{@"id":Id,
                            @"lon":[NSString stringWithFormat:@"%lf",lon],
@@ -48,15 +40,16 @@
 }
 
 
-//提交认证信息
--(void)submitInfo:(NSString*)name CardId:(NSString*)cardId Cert:(NSString*)cert
+-(void)submitInfo:(NSString*)name
+           cardId:(NSString*)cardId
+             cert:(NSString*)cert
           completion:(void (^)(id))completion{
+  
     NSDictionary *params = @{@"name":name,
                              @"cardId":cardId,
                              @"cert":cert
                              };
-    
-    
+  
     [[MAHttpClient client]post:[@"/member/verify" urlPathComponents]
                         params:[params presto]
                          class:[MAModel class]
@@ -64,14 +57,14 @@
     
 }
 
-//学校搜索
--(void)seachSchool:(NSString*)q Page:(NSInteger)page PageSize:(NSInteger)pageSize
+-(void)seachSchool:(NSString*)q
+              page:(NSInteger)page
+          pageSize:(NSInteger)pageSize
        completion:(void (^)(id))completion{
     NSDictionary *params = @{@"q":q,
-                             @"page":[NSString stringWithFormat:@"%d",page],
-                             @"pageSize":[NSString stringWithFormat:@"%d",pageSize]
+                             @"page":@(page),
+                             @"pageSize":@(pageSize)
                              };
-    
     
     [[MAHttpClient client]post:[@"/school/queryparam" urlPathComponents]
                         params:[params presto]
@@ -80,18 +73,16 @@
     
 }
 
-
-//付款
 -(void)payOrder:(NSString*)Id
-                Price:(NSString*)price
-                Token:(NSString*)token
+                price:(NSString*)price
+                token:(NSString*)token
                 completion:(void (^)(id))completion{
+  
     NSDictionary *params = @{@"id":Id,
                              @"price":price,
                              @"token":token
                              };
-    
-    
+      
     [[MAHttpClient client]post:[@"/order/pay" urlPathComponents]
                         params:[params presto]
                          class:[MAModel class]

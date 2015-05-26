@@ -6,14 +6,13 @@
 //  Copyright (c) 2015年 SongJiang. All rights reserved.
 //
 
-#import "MAPrestoClient+OrderRepay.h"
+#import "MAPrestoClient+Bill.h"
 #import "NSDictionary+MAPrestoClient.h"
 
-@implementation MAPrestoClient (OrderRepay)
+@implementation MAPrestoClient (Bill)
 
-//生成支付宝链接接口
 -(void)OrderRepay:(NSString*)amount
-               Token:(NSString*)token
+               token:(NSString*)token
                completion:(void (^)(id))completion{
     NSDictionary *params = @{@"amount":amount,
                              @"token":token,
@@ -26,10 +25,8 @@
     
 }
 
-
-//按年获取有账单的月份儿
--(void)getBillYear:(NSString*)year
-                  completion:(void (^)(id))completion{
+-(void)getYearBillByYear:(NSString*)year
+              completion:(void (^)(id))completion;{
     NSDictionary *params = @{
                              @"year":year,
                              
@@ -42,11 +39,9 @@
     
 }
 
-
-//按月取账单
--(void)getBillMonth:(NSString*)year
-                    Month:(NSString*)month
-                    completion:(void (^)(id))completion{
+-(void)getMonthBillByYear:(NSString*)year
+                    month:(NSString*)month
+               completion:(void (^)(id))completion;{
     NSDictionary *params = @{
                              @"year":year,
                              @"month":month
@@ -58,17 +53,6 @@
                     completion:completion];
     
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 @end

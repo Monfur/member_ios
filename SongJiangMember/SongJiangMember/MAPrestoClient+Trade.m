@@ -11,9 +11,9 @@
 
 @implementation MAPrestoClient (Trade)
 
-//设置交易密码
 -(void)setTradePassword:(NSString*)tradePwd
                completion:(void (^)(id))completion{
+  
     NSDictionary *params = @{
                              @"tradePwd":tradePwd,
                              
@@ -23,15 +23,12 @@
                         params:[params presto]
                          class:[MAModel class]
                     completion:completion];
-    
-    
-    
 }
 
-//修改交易密码
 -(void)reviseTradePassword:(NSString*)oldTradePwd
-                  NewTradePwd:(NSString*)newTradePwd
+                  newTradePwd:(NSString*)newTradePwd
                   completion:(void (^)(id))completion{
+  
     NSDictionary *params = @{
                              @"oldTradePwd":oldTradePwd,
                              @"newTradePwd":newTradePwd
@@ -46,11 +43,11 @@
     
 }
 
-//忘记交易密码
 -(void)forgetTradePassword:(NSString*)cardId
-                  Vericode:(NSString*)vericode
-                  NewTradePwd:(NSString*)newTradePwd
+                  vericode:(NSString*)vericode
+                  newTradePwd:(NSString*)newTradePwd
                   completion:(void (^)(id))completion{
+  
     NSDictionary *params = @{
                              @"cardId":cardId,
                              @"vericode":vericode,

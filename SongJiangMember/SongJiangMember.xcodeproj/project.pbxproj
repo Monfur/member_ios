@@ -59,9 +59,9 @@
 		1AF94E9A1B140CAD0052075B /* MAPrestoClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF94E6E1B140CAD0052075B /* MAPrestoClient.m */; };
 		32D38FC81B1446D400962436 /* MAPrestoClient+Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D38FC71B1446D400962436 /* MAPrestoClient+Account.m */; };
 		32D38FCF1B145EAD00962436 /* MAPrestoClient+Trade.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D38FCE1B145EAD00962436 /* MAPrestoClient+Trade.m */; };
-		32D38FD21B1462EE00962436 /* MAPrestoClient+CitySchool_info.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D38FD11B1462EE00962436 /* MAPrestoClient+CitySchool_info.m */; };
+		32D38FD21B1462EE00962436 /* MAPrestoClient+School.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D38FD11B1462EE00962436 /* MAPrestoClient+School.m */; };
 		32D38FD51B146C1400962436 /* MAPrestoClient+Bank.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D38FD41B146C1400962436 /* MAPrestoClient+Bank.m */; };
-		32D38FD81B14722E00962436 /* MAPrestoClient+OrderRepay.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D38FD71B14722E00962436 /* MAPrestoClient+OrderRepay.m */; };
+		32D38FD81B14722E00962436 /* MAPrestoClient+Bill.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D38FD71B14722E00962436 /* MAPrestoClient+Bill.m */; };
 		32D38FDB1B1475E000962436 /* MAPrestoClient+Shop.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D38FDA1B1475E000962436 /* MAPrestoClient+Shop.m */; };
 		32D38FE11B147ED500962436 /* MAPrestoClient+Chat.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D38FE01B147ED500962436 /* MAPrestoClient+Chat.m */; };
 		9637E076379BDA027CAC4B34 /* libPods-SongJiangMember.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D0E794A3A8FACF869DFF05 /* libPods-SongJiangMember.a */; };
@@ -187,12 +187,12 @@
 		32D38FC91B144B6700962436 /* SJMExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJMExtension.h; sourceTree = "<group>"; };
 		32D38FCD1B145EAD00962436 /* MAPrestoClient+Trade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MAPrestoClient+Trade.h"; sourceTree = "<group>"; };
 		32D38FCE1B145EAD00962436 /* MAPrestoClient+Trade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MAPrestoClient+Trade.m"; sourceTree = "<group>"; };
-		32D38FD01B1462EE00962436 /* MAPrestoClient+CitySchool_info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MAPrestoClient+CitySchool_info.h"; sourceTree = "<group>"; };
-		32D38FD11B1462EE00962436 /* MAPrestoClient+CitySchool_info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MAPrestoClient+CitySchool_info.m"; sourceTree = "<group>"; };
+		32D38FD01B1462EE00962436 /* MAPrestoClient+School.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MAPrestoClient+School.h"; sourceTree = "<group>"; };
+		32D38FD11B1462EE00962436 /* MAPrestoClient+School.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MAPrestoClient+School.m"; sourceTree = "<group>"; };
 		32D38FD31B146C1400962436 /* MAPrestoClient+Bank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MAPrestoClient+Bank.h"; sourceTree = "<group>"; };
 		32D38FD41B146C1400962436 /* MAPrestoClient+Bank.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MAPrestoClient+Bank.m"; sourceTree = "<group>"; };
-		32D38FD61B14722E00962436 /* MAPrestoClient+OrderRepay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MAPrestoClient+OrderRepay.h"; sourceTree = "<group>"; };
-		32D38FD71B14722E00962436 /* MAPrestoClient+OrderRepay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MAPrestoClient+OrderRepay.m"; sourceTree = "<group>"; };
+		32D38FD61B14722E00962436 /* MAPrestoClient+Bill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MAPrestoClient+Bill.h"; sourceTree = "<group>"; };
+		32D38FD71B14722E00962436 /* MAPrestoClient+Bill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MAPrestoClient+Bill.m"; sourceTree = "<group>"; };
 		32D38FD91B1475E000962436 /* MAPrestoClient+Shop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MAPrestoClient+Shop.h"; sourceTree = "<group>"; };
 		32D38FDA1B1475E000962436 /* MAPrestoClient+Shop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MAPrestoClient+Shop.m"; sourceTree = "<group>"; };
 		32D38FDF1B147ED500962436 /* MAPrestoClient+Chat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MAPrestoClient+Chat.h"; sourceTree = "<group>"; };
@@ -516,12 +516,12 @@
 				32D38FC71B1446D400962436 /* MAPrestoClient+Account.m */,
 				32D38FCD1B145EAD00962436 /* MAPrestoClient+Trade.h */,
 				32D38FCE1B145EAD00962436 /* MAPrestoClient+Trade.m */,
-				32D38FD01B1462EE00962436 /* MAPrestoClient+CitySchool_info.h */,
-				32D38FD11B1462EE00962436 /* MAPrestoClient+CitySchool_info.m */,
+				32D38FD01B1462EE00962436 /* MAPrestoClient+School.h */,
+				32D38FD11B1462EE00962436 /* MAPrestoClient+School.m */,
 				32D38FD31B146C1400962436 /* MAPrestoClient+Bank.h */,
 				32D38FD41B146C1400962436 /* MAPrestoClient+Bank.m */,
-				32D38FD61B14722E00962436 /* MAPrestoClient+OrderRepay.h */,
-				32D38FD71B14722E00962436 /* MAPrestoClient+OrderRepay.m */,
+				32D38FD61B14722E00962436 /* MAPrestoClient+Bill.h */,
+				32D38FD71B14722E00962436 /* MAPrestoClient+Bill.m */,
 				32D38FD91B1475E000962436 /* MAPrestoClient+Shop.h */,
 				32D38FDA1B1475E000962436 /* MAPrestoClient+Shop.m */,
 				32D38FDF1B147ED500962436 /* MAPrestoClient+Chat.h */,
@@ -697,7 +697,7 @@
 				32D38FC81B1446D400962436 /* MAPrestoClient+Account.m in Sources */,
 				1AF94E851B140CAD0052075B /* MACameraManager+AuthorizationExtra.m in Sources */,
 				1AF94E921B140CAD0052075B /* MABundleManager.m in Sources */,
-				32D38FD81B14722E00962436 /* MAPrestoClient+OrderRepay.m in Sources */,
+				32D38FD81B14722E00962436 /* MAPrestoClient+Bill.m in Sources */,
 				1AF94E801B140CAD0052075B /* UIViewController+Extra.m in Sources */,
 				1AF94E8D1B140CAD0052075B /* MATabbarController.m in Sources */,
 				1AF94E7A1B140CAD0052075B /* UIImage+Extra.m in Sources */,
@@ -714,7 +714,7 @@
 				32D38FDB1B1475E000962436 /* MAPrestoClient+Shop.m in Sources */,
 				1AF94E791B140CAD0052075B /* UIFont+Extra.m in Sources */,
 				1AF94E941B140CAD0052075B /* MAZonesManager.m in Sources */,
-				32D38FD21B1462EE00962436 /* MAPrestoClient+CitySchool_info.m in Sources */,
+				32D38FD21B1462EE00962436 /* MAPrestoClient+School.m in Sources */,
 				1AF94E891B140CAD0052075B /* MACameraView.m in Sources */,
 				1AF94E8C1B140CAD0052075B /* MANavigationController.m in Sources */,
 				1AF94E9A1B140CAD0052075B /* MAPrestoClient.m in Sources */,

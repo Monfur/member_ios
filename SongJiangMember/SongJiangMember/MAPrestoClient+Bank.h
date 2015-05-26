@@ -17,8 +17,8 @@
 
 //绑定银行卡
 -(void)bindBankCard:(NSString*)bankId
-               Card:(NSString*)card
-                Sub:(NSString*)sub
+               card:(NSString*)card
+                sub:(NSString*)sub
          completion:(void (^)(id))completion;
 
 //解绑银行卡
@@ -32,7 +32,7 @@
 
 //提现
 -(void)withdraw:(NSString*)money
-          Token:(NSString*)token
+          token:(NSString*)token
      completion:(void (^)(id))completion;
 
 

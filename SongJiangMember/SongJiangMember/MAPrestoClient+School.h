@@ -8,7 +8,7 @@
 
 #import "MAPrestoClient.h"
 
-@interface MAPrestoClient (CitySchool_info)
+@interface MAPrestoClient (School)
 
 //获取城市列表
 -(void)getCityList:(NSString*)tradePwd
@@ -16,22 +16,26 @@
 
 //获取学校列表
 -(void)getSchoolList:(NSString*)Id
-                 Lon:(double)lon
-                 Lat:(double)lat
+                 lon:(double)lon
+                 lat:(double)lat
           completion:(void (^)(id))completion;
 
 //提交认证信息
--(void)submitInfo:(NSString*)name CardId:(NSString*)cardId Cert:(NSString*)cert
+-(void)submitInfo:(NSString*)name
+           cardId:(NSString*)cardId
+             cert:(NSString*)cert
        completion:(void (^)(id))completion;
 
 //学校搜索
--(void)seachSchool:(NSString*)q Page:(NSInteger)page PageSize:(NSInteger)pageSize
+-(void)seachSchool:(NSString*)q
+              page:(NSInteger)page
+          pageSize:(NSInteger)pageSize
         completion:(void (^)(id))completion;
 
 //付款
 -(void)payOrder:(NSString*)Id
-          Price:(NSString*)price
-          Token:(NSString*)token
+          price:(NSString*)price
+          token:(NSString*)token
      completion:(void (^)(id))completion;
 
 

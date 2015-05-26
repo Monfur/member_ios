@@ -12,10 +12,10 @@
 
 @implementation MAPrestoClient (Account)
 
-//注册
+
 - (void)registerPhone:(NSString *)phone
-             Vericode:(NSString*)vericode
-             PassWord:(NSString*)password
+             vericode:(NSString*)vericode
+             passWord:(NSString*)password
              completion:(void (^)(id))completion{
     NSDictionary *params = @{
                              @"phone":phone,
@@ -28,16 +28,18 @@
                    completion:completion];
 }
 
-//登录
+
 - (void)loginPhone:(NSString *)phone
-             Password:(NSString*)password
-             PushCode:(NSString*)pushCode
+             password:(NSString*)password
+             pushCode:(NSString*)pushCode
            completion:(void (^)(id))completion{
+  
     NSDictionary *params = @{
                              @"phone":phone,
                              @"password":password,
                              @"pushCode":pushCode
                              } ;
+  
     [[MAHttpClient client]post:[@"/member/login" urlPathComponents]
                        params:[params presto]
                         class:[MAModel class]
@@ -45,10 +47,9 @@
 }
 
 
-//忘记密码
 -(void)forgetPhonePassword:(NSString *)phone
-          Vericode:(NSString*)vericode
-          PassWord:(NSString*)password
+          vericode:(NSString*)vericode
+          passWord:(NSString*)password
         completion:(void (^)(id))completion{
     
     NSDictionary *params = @{
@@ -56,6 +57,7 @@
                              @"vericode":vericode,
                              @"password":password
                              } ;
+  
     [[MAHttpClient client]post:[@"/member/forgetpwd" urlPathComponents]
                        params:[params presto]
                         class:[MAModel class]
@@ -65,10 +67,10 @@
     
 }
 
-//修改密码
+
 -(void)revisePhonePassword:(NSString *)phone
-          OldPwd:(NSString*)oldPwd
-          NewPwd:(NSString*)newPwd
+          oldPwd:(NSString*)oldPwd
+          newPwd:(NSString*)newPwd
         completion:(void (^)(id))completion{
     
     NSDictionary *params = @{
@@ -76,6 +78,7 @@
                              @"OldPwd":oldPwd,
                              @"NewPwd":newPwd
                              } ;
+  
     [[MAHttpClient client]post:[@"/member/changepwd" urlPathComponents]
                         params:[params presto]
                          class:[MAModel class]
@@ -85,10 +88,9 @@
     
 }
 
-
-//注册推送消息
 - (void)registerPushMessage:(NSString *)pushCode
                              completion:(void (^)(id))completion{
+  
     NSDictionary *params = @{
                              @"pushCode":pushCode
                              
@@ -99,10 +101,9 @@
                     completion:completion];
 }
 
-
-//退出登录
 - (void)logoutPhone:(NSString *)pushCode
                  completion:(void (^)(id))completion{
+  
     NSDictionary *params = @{
                              @"pushCode":pushCode
                              

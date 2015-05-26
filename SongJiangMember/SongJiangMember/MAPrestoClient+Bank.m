@@ -11,30 +11,26 @@
 
 @implementation MAPrestoClient (Bank)
 
-//获取银行列表
 -(void)getBankList:(NSString*)tradePwd
                    completion:(void (^)(id))completion{
-    NSDictionary *params = @{};
-    
-    
+  
     [[MAHttpClient client]post:[@"/bank/list" urlPathComponents]
-                        params:[params presto]
+                        params:[@{} presto]
                          class:[MAModel class]
                          completion:completion];
     
 }
 
-//解绑银行卡//绑定银行卡
 -(void)bindBankCard:(NSString*)bankId
-                    Card:(NSString*)card
-                    Sub:(NSString*)sub
+                    card:(NSString*)card
+                    sub:(NSString*)sub
                     completion:(void (^)(id))completion{
+  
     NSDictionary *params = @{@"bankId":bankId,
                              @"card":card,
                              @"sub":sub
                              };
-    
-    
+  
     [[MAHttpClient client]post:[@"/bank/bindcard" urlPathComponents]
                         params:[params presto]
                          class:[MAModel class]
@@ -45,8 +41,9 @@
 
 -(void)unBindBankCard:(NSString*)bankCardId
                       completion:(void (^)(id))completion{
-    NSDictionary *params = @{@"bankCardId":bankCardId,
-                             
+  
+    NSDictionary *params = @{
+                             @"bankCardId":bankCardId,
                              };
     
     
@@ -57,28 +54,24 @@
     
 }
 
-//获取绑定银行卡列表
 -(void)getBindBankList:(NSString*)tradePwd
                        completion:(void (^)(id))completion{
-    NSDictionary *params = @{};
-    
-    
+  
     [[MAHttpClient client]post:[@"/bank/bindlis" urlPathComponents]
-                        params:[params presto]
+                        params:[@{} presto]
                          class:[MAModel class]
                          completion:completion];
     
 }
 
 
-//提现
 -(void)withdraw:(NSString*)money
-                Token:(NSString*)token
+                token:(NSString*)token
                 completion:(void (^)(id))completion{
-    NSDictionary *params = @{@"money":money,
+    NSDictionary *params = @{
+                             @"money":money,
                              @"token":token
                              };
-    
     
     [[MAHttpClient client]post:[@"/withdraw/subwdra" urlPathComponents]
                         params:[params presto]

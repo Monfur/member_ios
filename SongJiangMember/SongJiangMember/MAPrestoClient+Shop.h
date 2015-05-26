@@ -11,17 +11,17 @@
 @interface MAPrestoClient (Shop)
 
 //获取商家列表
--(void)getShopList:(double)lon
-               Lat:(double)lat
-              Type:(NSInteger)type
-              Page:(NSInteger)page
-          PageSize:(NSInteger)pageSize
+-(void)getShopListByLon:(double)lon
+               lat:(double)lat
+              type:(NSInteger)type
+              page:(NSInteger)page
+          count:(NSInteger)count
         completion:(void (^)(id))completion;
 
 //搜索商家
--(void)searchShop:(NSString*)q
-             Page:(NSInteger)page
-         PageSize:(NSInteger)pageSize
+-(void)searchShop:(NSString*)keyword
+             page:(NSInteger)page
+            count:(NSInteger)count
        completion:(void (^)(id))completion;
 
 //获取商家详情

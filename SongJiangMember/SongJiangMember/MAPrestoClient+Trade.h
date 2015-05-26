@@ -17,13 +17,13 @@
 
 //修改交易密码
 -(void)reviseTradePassword:(NSString*)oldTradePwd
-                  NewTradePwd:(NSString*)newTradePwd
+                  newTradePwd:(NSString*)newTradePwd
                   completion:(void (^)(id))completion;
 
 //忘记交易密码
 -(void)forgetTradePassword:(NSString*)cardId
-                  Vericode:(NSString*)vericode
-                  NewTradePwd:(NSString*)newTradePwd
+                  vericode:(NSString*)vericode
+                  newTradePwd:(NSString*)newTradePwd
                   completion:(void (^)(id))completion;
 
 

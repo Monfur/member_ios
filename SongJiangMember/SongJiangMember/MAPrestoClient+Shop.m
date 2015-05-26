@@ -11,19 +11,18 @@
 @implementation MAPrestoClient (Shop)
 
 //获取商家列表
--(void)getShopList:(double)lon
-               Lat:(double)lat
-               Type:(NSInteger)type
-               Page:(NSInteger)page
-               PageSize:(NSInteger)pageSize
-               completion:(void (^)(id))completion{
+-(void)getShopListByLon:(double)lon
+                    lat:(double)lat
+                   type:(NSInteger)type
+                   page:(NSInteger)page
+                  count:(NSInteger)count
+             completion:(void (^)(id))completion;{
     NSDictionary *params = @{
-                             @"lon":[NSString stringWithFormat:@"%lf",lon],
-                             @"lat":[NSString stringWithFormat:@"%lf",lat],
-                             @"type":[NSString stringWithFormat:@"%d",type],
-                             @"page":[NSString stringWithFormat:@"%d",page],
-                             @"pageSize":[NSString stringWithFormat:@"%d",pageSize],
-                             
+                             @"lon":@(lon),
+                             @"lat":@(lat),
+                             @"type":@(type),
+                             @"page":@(page),
+                             @"pageSize":@(count),
                              };
 
     [[MAHttpClient client]post:[@"/shop/list" urlPathComponents]
@@ -35,29 +34,27 @@
 
 
 //搜索商家
--(void)searchShop:(NSString*)q
-                  Page:(NSInteger)page
-                  PageSize:(NSInteger)pageSize
-                  completion:(void (^)(id))completion{
+-(void)searchShop:(NSString*)keyword
+             page:(NSInteger)page
+            count:(NSInteger)count
+       completion:(void (^)(id))completion;{
     NSDictionary *params = @{
-                             @"q":q,
-                             @"page":[NSString stringWithFormat:@"%d",page],
-                             @"pageSize":[NSString stringWithFormat:@"%d",pageSize],
-                             
+                             @"q":keyword,
+                             @"page":@(page),
+                             @"pageSize":@(count),
                              };
     
     [[MAHttpClient client]post:[@"/shop/search" urlPathComponents]
                         params:[params presto]
                          class:[MAModel class]
                     completion:completion];
-    
 }
 
 
 
 //获取商家详情
 -(void)getShopDetail:(NSString*)shopId
-          completion:(void (^)(id))completion{
+          completion:(void (^)(id))completion;{
     NSDictionary *params = @{
                              @"shopId":shopId,
                             };
