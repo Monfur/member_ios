@@ -14,6 +14,7 @@
 		1A0692AB1B12BD0700BB583C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A0692AA1B12BD0700BB583C /* Images.xcassets */; };
 		1A0692AE1B12BD0700BB583C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A0692AC1B12BD0700BB583C /* LaunchScreen.xib */; };
 		1A0692BA1B12BD0700BB583C /* SongJiangMemberTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0692B91B12BD0700BB583C /* SongJiangMemberTests.m */; };
+		1A5E99881B141D3800D2FA74 /* NSDictionary+MAPrestoClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5E99871B141D3800D2FA74 /* NSDictionary+MAPrestoClient.m */; };
 		1AF94E721B140CAD0052075B /* NSDate+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF94E151B140CAD0052075B /* NSDate+Extra.m */; };
 		1AF94E731B140CAD0052075B /* NSObject+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF94E171B140CAD0052075B /* NSObject+Extra.m */; };
 		1AF94E741B140CAD0052075B /* NSString+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF94E191B140CAD0052075B /* NSString+Extra.m */; };
@@ -82,6 +83,8 @@
 		1A0692B31B12BD0700BB583C /* SongJiangMemberTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SongJiangMemberTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A0692B81B12BD0700BB583C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A0692B91B12BD0700BB583C /* SongJiangMemberTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SongJiangMemberTests.m; sourceTree = "<group>"; };
+		1A5E99861B141D3800D2FA74 /* NSDictionary+MAPrestoClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+MAPrestoClient.h"; sourceTree = "<group>"; };
+		1A5E99871B141D3800D2FA74 /* NSDictionary+MAPrestoClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+MAPrestoClient.m"; sourceTree = "<group>"; };
 		1AF94E141B140CAD0052075B /* NSDate+Extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extra.h"; sourceTree = "<group>"; };
 		1AF94E151B140CAD0052075B /* NSDate+Extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extra.m"; sourceTree = "<group>"; };
 		1AF94E161B140CAD0052075B /* NSObject+Extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extra.h"; sourceTree = "<group>"; };
@@ -317,6 +320,7 @@
 		1AF94E351B140CAD0052075B /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				1AF94E641B140CAD0052075B /* Network */,
 				1AF94E361B140CAD0052075B /* Camera */,
 				1AF94E471B140CAD0052075B /* Controller */,
 				1AF94E521B140CAD0052075B /* Extension */,
@@ -325,7 +329,6 @@
 				1AF94E611B140CAD0052075B /* Muma.h */,
 				1AF94E621B140CAD0052075B /* MumaDefault.bundle */,
 				1AF94E631B140CAD0052075B /* MumaPrefix.h */,
-				1AF94E641B140CAD0052075B /* Network */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -416,6 +419,8 @@
 				1AF94E6C1B140CAD0052075B /* MAObject.m */,
 				1AF94E6D1B140CAD0052075B /* MAPrestoClient.h */,
 				1AF94E6E1B140CAD0052075B /* MAPrestoClient.m */,
+				1A5E99861B141D3800D2FA74 /* NSDictionary+MAPrestoClient.h */,
+				1A5E99871B141D3800D2FA74 /* NSDictionary+MAPrestoClient.m */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -594,6 +599,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A5E99881B141D3800D2FA74 /* NSDictionary+MAPrestoClient.m in Sources */,
 				1AF94E991B140CAD0052075B /* MAObject.m in Sources */,
 				1AF94E881B140CAD0052075B /* MACameraManager.m in Sources */,
 				1AF94E7C1B140CAD0052075B /* UINavigationController+Extra.m in Sources */,

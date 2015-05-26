@@ -8,21 +8,21 @@
 #import "MAHttpClient.h"
 #import <AFNetworking/AFNetworkActivityIndicatorManager.h>
 
-
-
 #ifdef __SJM_MODE_DEBUG__
 
-//debug
-#define MA_HTTP_CLIENT_HOST_URL @""
+//@debug
+#define MA_HTTP_CLIENT_HOST_URL @"http://192.168.1.117/"
+#define MA_HTTP_CLIENT_API @"/api/v1"
 
 #else
 
-//release
-#define MA_HTTP_CLIENT_HOST_URL @""
+//@release
+#define MA_HTTP_CLIENT_HOST_URL @"https://52songjiang.com"
+#define MA_HTTP_CLIENT_API @"/api/v1"
 
 #endif
 
-#define MA_HTTP_CLIENT_API @"/api/v1"
+
 
 @interface MAHttpClient(){
   NSString *_baseUrl;
@@ -133,7 +133,10 @@ static MAHttpClient *instance;
       maError.error = httpError;
       error(maError);
       if (completion) {
-        completion(error);
+        id instance = [[class alloc]init];
+        if ([class isSubclassOfClass:[MAModel class]]) {
+          [(MAModel *)instance setError:maError];
+        }
       }
     }
   }];
@@ -172,7 +175,10 @@ static MAHttpClient *instance;
       maError.error = httpError;
       error(maError);
       if (completion) {
-        completion(error);
+        id instance = [[class alloc]init];
+        if ([class isSubclassOfClass:[MAModel class]]) {
+          [(MAModel *)instance setError:maError];
+        }
       }
     }
   }];

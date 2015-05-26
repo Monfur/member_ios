@@ -11,8 +11,7 @@
 
 + (instancetype)prestoClient;
 
-
-
+- (void)example:(void (^)(id))completion
 
 
 @end

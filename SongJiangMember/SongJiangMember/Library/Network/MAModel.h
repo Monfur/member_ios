@@ -6,8 +6,11 @@
 //
 
 #import "MTLModel.h"
+#import "MAError.h"
 
 @interface MAModel : MTLModel<MTLJSONSerializing>
+
+@property (nonatomic, strong) MAError *error;
 
 - (id)initWithData:(NSData *)jsonData;
 - (id)initWithString:(NSString *)jsonStr;
