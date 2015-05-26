@@ -32,6 +32,7 @@ static MAPrestoClient *instance;
   [[MAHttpClient client] cancelAllOperation];
 }
 
+
 - (void)example:(void (^)(id))completion{
   NSDictionary *params = @{
                            @"example":@0,
