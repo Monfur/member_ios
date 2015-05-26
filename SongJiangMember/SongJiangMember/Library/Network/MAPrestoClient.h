@@ -12,7 +12,6 @@
 + (instancetype)prestoClient;
 
 - (void)cancelAllOperation;
-- (void)example:(void (^)(id))completion;
 
 
 @end
