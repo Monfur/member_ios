@@ -51,7 +51,7 @@
 }
 
 - (void)loadCacheModel:(NSString *)fileName completion:(void(^)(id model)) completion{
-  NSDictionary *data = [[MAFileManager manager] loadCacheFile:fileName];
+  NSDictionary *data = [[MAFileManager manager] loadCacheDictionary:fileName];
   if (!data) {
     return;
   }
