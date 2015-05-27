@@ -208,23 +208,5 @@ MTLValueTransformer* dateWithObjectIMP(id self, SEL _cmd){
   
 }
 
-- (void)loadCache{
-  
-  if(![self valueForKey:@"cacheId"]){
-    return;
-  }
-  
-  NSString *cachedName = [NSString stringWithFormat:@"%@_%@",
-                          NSStringFromClass(self.class),
-                          [self valueForKey:@"cacheId"]];
-  
-  NSString *cachedPath = [[MAFileManager manager].cacheHostPath
-                          stringByAppendingPathComponent:cachedName];
-  
-  [self.dictionaryValue writeToFile:cachedPath atomically:YES];
-  
-}
-
-
 
 @end

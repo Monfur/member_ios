@@ -14,8 +14,8 @@
 
 + (MAFileManager *)manager;
 
-
-- (NSDictionary *)loadCacheFile:(NSString *)fileName;
+- (NSArray *)loadCacheArray:(NSString *)fileName;
+- (NSDictionary *)loadCacheDictionary:(NSString *)fileName;
 - (void)loadCacheModel:(NSString *)fileName completion:(void(^)(id model)) completion;
 
 @end
