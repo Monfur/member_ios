@@ -14,6 +14,7 @@
 
 - (id)initWithData:(NSData *)jsonData;
 - (id)initWithString:(NSString *)jsonStr;
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 - (id)initWithDictionary:(NSDictionary *)dictionary;
 
 + (id)objectWithData:(NSData *)jsonData;
@@ -27,5 +28,8 @@
 + (NSDictionary *)keysOfDateWithCustomFormate;
 + (NSDictionary *)keysOfArray;
 + (NSDictionary *)keysOfObject;
+
+
+- (void)cache;
 
 @end

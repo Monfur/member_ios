@@ -23,6 +23,7 @@
 #import "MATabbarController.h"
 #import "MAColorManager.h"
 #import "MAZonesManager.h"
+#import "MAFileManager.h"
 #import "MAModel.h"
 #import "MAError.h"
 #import "MAHttpClient.h"
