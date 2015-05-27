@@ -59,8 +59,6 @@
                          class:[MAModel class]
                     completion:completion];
     
-    
-    
 }
 
 
