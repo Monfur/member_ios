@@ -43,7 +43,7 @@
   return data;
 }
 
-- (NSDictionary *)loadCacheFile:(NSString *)fileName{
+- (NSDictionary *)loadCacheDictionary:(NSString *)fileName{
   NSString *cachedPath = [[MAFileManager manager].cacheHostPath
                           stringByAppendingPathComponent:fileName];
   NSDictionary *data = [[NSDictionary alloc]initWithContentsOfFile:cachedPath];
