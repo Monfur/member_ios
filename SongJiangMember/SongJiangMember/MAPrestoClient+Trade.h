@@ -11,16 +11,16 @@
 @interface MAPrestoClient (Trade)
 
 
-//设置交易密码
+//setting trade password
 -(void)setTradePassword:(NSString*)tradePwd
                completion:(void (^)(id))completion;
 
-//修改交易密码
+//modify trade password
 -(void)reviseTradePassword:(NSString*)oldTradePwd
                   newTradePwd:(NSString*)newTradePwd
                   completion:(void (^)(id))completion;
 
-//忘记交易密码
+//forget trade password
 -(void)forgetTradePassword:(NSString*)cardId
                   vericode:(NSString*)vericode
                   newTradePwd:(NSString*)newTradePwd

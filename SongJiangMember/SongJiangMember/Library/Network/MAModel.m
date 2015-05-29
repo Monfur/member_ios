@@ -82,6 +82,7 @@ MTLValueTransformer* dateWithObjectIMP(id self, SEL _cmd){
   [self.class ma_resolveMethods];
 }
 
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 - (instancetype) initWithDictionary:(NSDictionary *)dictionary{
   NSError *error = nil;
   self = [MTLJSONAdapter modelOfClass:[self class] fromJSONDictionary:dictionary];
@@ -186,5 +187,26 @@ MTLValueTransformer* dateWithObjectIMP(id self, SEL _cmd){
     }
   }
 }
+
+
+//To cache model
+//set the property of "cacheId" as identifier first
+
+- (void)cache{
+  
+  if(![self valueForKey:@"cacheId"]){
+    return;
+  }
+  NSString *cachedName = [NSString stringWithFormat:@"%@_%@",
+                          NSStringFromClass(self.class),
+                          [self valueForKey:@"cacheId"]];
+  
+  NSString *cachedPath = [[MAFileManager manager].cacheHostPath
+                          stringByAppendingPathComponent:cachedName];
+  
+  [self.dictionaryValue writeToFile:cachedPath atomically:YES];
+  
+}
+
 
 @end

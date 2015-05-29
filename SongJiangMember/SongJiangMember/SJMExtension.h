@@ -9,7 +9,7 @@
 #ifndef SongJiangMember_SJMExtension_h
 #define SongJiangMember_SJMExtension_h
 
-//登录  注册    忘记密码
+//登录、注册、忘记密码
 #import "MAPrestoClient+Account.h"
 
 //交易密码
@@ -21,7 +21,7 @@
 //银行
 #import "MAPrestoClient+Bank.h"
 
-//账单  还款
+//账单、还款
 #import "MAPrestoClient+Bill.h"
 
 //商家

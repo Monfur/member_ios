@@ -11,38 +11,38 @@
 @interface MAPrestoClient (Account)
 
 
-//注册
+//register
 - (void)registerPhone:(NSString *)phone
              vericode:(NSString*)vericode
              passWord:(NSString*)password
            completion:(void (^)(id))completion;
 
-//登录
+//login
 - (void)loginPhone:(NSString *)phone
           password:(NSString*)password
           pushCode:(NSString*)pushCode
         completion:(void (^)(id))completion;
 
 
-//忘记密码
+//forget password
 -(void)forgetPhonePassword:(NSString *)phone
           vericode:(NSString*)vericode
           passWord:(NSString*)password
         completion:(void (^)(id))completion;
 
 
-//修改密码
+//modify password
 -(void)revisePhonePassword:(NSString *)phone
                     oldPwd:(NSString*)oldPwd
                     newPwd:(NSString*)newPwd
                 completion:(void (^)(id))completion;
 
-//注册推送消息
+//push notification
 - (void)registerPushMessage:(NSString *)pushCode
                  completion:(void (^)(id))completion;
 
 
-//退出登录
+//exit login
 - (void)logoutPhone:(NSString *)pushCode
          completion:(void (^)(id))completion;
 

@@ -16,6 +16,7 @@
 		1A5E998F1B14511B00D2FA74 /* SJMAppLauncher.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5E998B1B14511B00D2FA74 /* SJMAppLauncher.m */; };
 		1A5E99921B1451C600D2FA74 /* SJMAppLauncher+Dispatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5E99911B1451C600D2FA74 /* SJMAppLauncher+Dispatch.m */; };
 		1A5E99951B14520C00D2FA74 /* SJMAppLauncher+Launch.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5E99941B14520C00D2FA74 /* SJMAppLauncher+Launch.m */; };
+		1ADDD41A1B15B23300BF421A /* MAFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADDD4191B15B23300BF421A /* MAFileManager.m */; };
 		1AF94E721B140CAD0052075B /* NSDate+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF94E151B140CAD0052075B /* NSDate+Extra.m */; };
 		1AF94E731B140CAD0052075B /* NSObject+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF94E171B140CAD0052075B /* NSObject+Extra.m */; };
 		1AF94E741B140CAD0052075B /* NSString+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF94E191B140CAD0052075B /* NSString+Extra.m */; };
@@ -96,6 +97,8 @@
 		1A5E998E1B14511B00D2FA74 /* SJMAppSettingData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJMAppSettingData.h; sourceTree = "<group>"; };
 		1A5E99911B1451C600D2FA74 /* SJMAppLauncher+Dispatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SJMAppLauncher+Dispatch.m"; sourceTree = "<group>"; };
 		1A5E99941B14520C00D2FA74 /* SJMAppLauncher+Launch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SJMAppLauncher+Launch.m"; sourceTree = "<group>"; };
+		1ADDD4181B15B23300BF421A /* MAFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAFileManager.h; sourceTree = "<group>"; };
+		1ADDD4191B15B23300BF421A /* MAFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAFileManager.m; sourceTree = "<group>"; };
 		1AF94E141B140CAD0052075B /* NSDate+Extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extra.h"; sourceTree = "<group>"; };
 		1AF94E151B140CAD0052075B /* NSDate+Extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extra.m"; sourceTree = "<group>"; };
 		1AF94E161B140CAD0052075B /* NSObject+Extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extra.h"; sourceTree = "<group>"; };
@@ -456,6 +459,8 @@
 				1AF94E5E1B140CAD0052075B /* MAColorManager.m */,
 				1AF94E5F1B140CAD0052075B /* MAZonesManager.h */,
 				1AF94E601B140CAD0052075B /* MAZonesManager.m */,
+				1ADDD4181B15B23300BF421A /* MAFileManager.h */,
+				1ADDD4191B15B23300BF421A /* MAFileManager.m */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -692,6 +697,7 @@
 				1A0692A61B12BD0700BB583C /* ViewController.m in Sources */,
 				1AF94E901B140CAD0052075B /* UIImage+MAExtra.m in Sources */,
 				1AF94E961B140CAD0052075B /* MAError.m in Sources */,
+				1ADDD41A1B15B23300BF421A /* MAFileManager.m in Sources */,
 				1AF94E811B140CAD0052075B /* UIWebView+Extra.m in Sources */,
 				1A5E99921B1451C600D2FA74 /* SJMAppLauncher+Dispatch.m in Sources */,
 				32D38FC81B1446D400962436 /* MAPrestoClient+Account.m in Sources */,
