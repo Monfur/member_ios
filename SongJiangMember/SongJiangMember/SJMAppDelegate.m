@@ -19,7 +19,6 @@
   
   self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
   self.window.rootViewController = [SJMAppLauncher rootMenuController];
-  
   [self.window makeKeyAndVisible];
   
   return YES;

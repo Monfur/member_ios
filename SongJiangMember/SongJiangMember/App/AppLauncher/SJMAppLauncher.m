@@ -26,6 +26,15 @@ static MATabbarController *tabController;
   dispatch_once(&onceToken, ^{
     shareInstance = [[SJMAppLauncher alloc] init];
   });
+//    __weak typeof(self) weakSelf= self;
+    @weakify(self);
+    void(^block)(void) = ^{
+        @strongify(self);
+
+
+        
+    };
+
   return shareInstance;
 }
 

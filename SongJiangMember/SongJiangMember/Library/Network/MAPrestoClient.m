@@ -29,6 +29,7 @@ static MAPrestoClient *instance;
 - (void)cancelAllOperation{
   
   [[MAHttpClient client] cancelAllOperation];
+    
 }
 
 
