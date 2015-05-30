@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2C31E2BCBB58A0426420D511"
+               BlueprintIdentifier = "2184DD5EE74D7CDCF4AB6AB1"
                BuildableName = "libPods-SongJiangMember-BaiduMapAPI.a"
                BlueprintName = "Pods-SongJiangMember-BaiduMapAPI"
                ReferencedContainer = "container:Pods.xcodeproj">

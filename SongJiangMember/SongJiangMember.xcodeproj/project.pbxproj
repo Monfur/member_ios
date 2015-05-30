@@ -17,6 +17,8 @@
 		1A5E99921B1451C600D2FA74 /* SJMAppLauncher+Dispatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5E99911B1451C600D2FA74 /* SJMAppLauncher+Dispatch.m */; };
 		1A5E99951B14520C00D2FA74 /* SJMAppLauncher+Launch.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5E99941B14520C00D2FA74 /* SJMAppLauncher+Launch.m */; };
 		1ADDD41A1B15B23300BF421A /* MAFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADDD4191B15B23300BF421A /* MAFileManager.m */; };
+		1ADDD4261B18463200BF421A /* SJMExampleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADDD4251B18463200BF421A /* SJMExampleModel.m */; };
+		1ADDD4291B1848DA00BF421A /* SJMExampleUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADDD4281B1848DA00BF421A /* SJMExampleUserModel.m */; };
 		1AF94E721B140CAD0052075B /* NSDate+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF94E151B140CAD0052075B /* NSDate+Extra.m */; };
 		1AF94E731B140CAD0052075B /* NSObject+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF94E171B140CAD0052075B /* NSObject+Extra.m */; };
 		1AF94E741B140CAD0052075B /* NSString+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF94E191B140CAD0052075B /* NSString+Extra.m */; };
@@ -99,6 +101,10 @@
 		1A5E99941B14520C00D2FA74 /* SJMAppLauncher+Launch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SJMAppLauncher+Launch.m"; sourceTree = "<group>"; };
 		1ADDD4181B15B23300BF421A /* MAFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAFileManager.h; sourceTree = "<group>"; };
 		1ADDD4191B15B23300BF421A /* MAFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAFileManager.m; sourceTree = "<group>"; };
+		1ADDD4241B18463200BF421A /* SJMExampleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJMExampleModel.h; sourceTree = "<group>"; };
+		1ADDD4251B18463200BF421A /* SJMExampleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJMExampleModel.m; sourceTree = "<group>"; };
+		1ADDD4271B1848DA00BF421A /* SJMExampleUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJMExampleUserModel.h; sourceTree = "<group>"; };
+		1ADDD4281B1848DA00BF421A /* SJMExampleUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJMExampleUserModel.m; sourceTree = "<group>"; };
 		1AF94E141B140CAD0052075B /* NSDate+Extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extra.h"; sourceTree = "<group>"; };
 		1AF94E151B140CAD0052075B /* NSDate+Extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extra.m"; sourceTree = "<group>"; };
 		1AF94E161B140CAD0052075B /* NSObject+Extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extra.h"; sourceTree = "<group>"; };
@@ -487,6 +493,10 @@
 		1AF94E6F1B140CAD0052075B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1ADDD4241B18463200BF421A /* SJMExampleModel.h */,
+				1ADDD4251B18463200BF421A /* SJMExampleModel.m */,
+				1ADDD4271B1848DA00BF421A /* SJMExampleUserModel.h */,
+				1ADDD4281B1848DA00BF421A /* SJMExampleUserModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -722,11 +732,13 @@
 				1AF94E941B140CAD0052075B /* MAZonesManager.m in Sources */,
 				32D38FD21B1462EE00962436 /* MAPrestoClient+School.m in Sources */,
 				1AF94E891B140CAD0052075B /* MACameraView.m in Sources */,
+				1ADDD4261B18463200BF421A /* SJMExampleModel.m in Sources */,
 				1AF94E8C1B140CAD0052075B /* MANavigationController.m in Sources */,
 				1AF94E9A1B140CAD0052075B /* MAPrestoClient.m in Sources */,
 				1AF94E761B140CAD0052075B /* UIButton+Extra.m in Sources */,
 				32D38FD51B146C1400962436 /* MAPrestoClient+Bank.m in Sources */,
 				1AF94E721B140CAD0052075B /* NSDate+Extra.m in Sources */,
+				1ADDD4291B1848DA00BF421A /* SJMExampleUserModel.m in Sources */,
 				1AF94E7F1B140CAD0052075B /* UIView+Extra.m in Sources */,
 				1AF94E8B1B140CAD0052075B /* MAListViewController.m in Sources */,
 				1AF94E741B140CAD0052075B /* NSString+Extra.m in Sources */,

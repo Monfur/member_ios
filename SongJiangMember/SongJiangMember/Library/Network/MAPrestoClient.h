@@ -6,12 +6,15 @@
 //
 
 #import "MAObject.h"
+#import "SJMExampleModel.h"
 
 @interface MAPrestoClient : MAObject
 
 + (instancetype)prestoClient;
 
 - (void)cancelAllOperation;
+
+- (void)example:(void(^)(SJMExampleModel *model)) completion;
 
 
 @end

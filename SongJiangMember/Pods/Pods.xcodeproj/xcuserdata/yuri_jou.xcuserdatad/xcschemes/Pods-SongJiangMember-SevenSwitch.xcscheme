@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "20416AFAE7411AAE72ECB037"
+               BlueprintIdentifier = "0E201C831323113980E92E4D"
                BuildableName = "libPods-SongJiangMember-SevenSwitch.a"
                BlueprintName = "Pods-SongJiangMember-SevenSwitch"
                ReferencedContainer = "container:Pods.xcodeproj">
