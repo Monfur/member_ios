@@ -37,6 +37,9 @@ static MATabbarController *tabController;
   dispatch_once(&onceToken, ^{
     tabController = [[MATabbarController alloc] init];
     tabController.tabBar.tintColor = [UIColor colorWithHexString:@"0x696d77"];
+    [[MAPrestoClient prestoClient]example:^(SJMExampleModel *model) {
+      
+    }];
   });
   return tabController;
 }

@@ -11,8 +11,8 @@
 #ifdef __SJM_MODE_DEBUG__
 
 //@debug
-#define MA_HTTP_CLIENT_HOST_URL @"http://192.168.1.117/"
-#define MA_HTTP_CLIENT_API @"/api/v1"
+#define MA_HTTP_CLIENT_HOST_URL @"http://192.168.1.117"
+#define MA_HTTP_CLIENT_API @"/json/api"
 
 #else
 

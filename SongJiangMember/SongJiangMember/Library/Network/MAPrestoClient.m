@@ -31,7 +31,9 @@ static MAPrestoClient *instance;
   [[MAHttpClient client] cancelAllOperation];
 }
 
-
+- (void)example:(void(^)(SJMExampleModel *model)) completion{
+  [[MAHttpClient client]get:[@"login" urlPathComponents] class:[SJMExampleModel class] completion:completion];
+}
 
 
 
