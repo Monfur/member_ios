@@ -31,8 +31,8 @@
 #import "MAPrestoClient+Chat.h"
 
 
-
-
+//json文件缓存
+#import "MAPrestoClient+SChche.h"
 
 
 

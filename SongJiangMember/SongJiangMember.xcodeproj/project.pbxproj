@@ -60,6 +60,9 @@
 		1AF94E981B140CAD0052075B /* MAModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF94E6A1B140CAD0052075B /* MAModel.m */; };
 		1AF94E991B140CAD0052075B /* MAObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF94E6C1B140CAD0052075B /* MAObject.m */; };
 		1AF94E9A1B140CAD0052075B /* MAPrestoClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF94E6E1B140CAD0052075B /* MAPrestoClient.m */; };
+		321EC64B1B1C309F00071FA0 /* SJMChche.m in Sources */ = {isa = PBXBuildFile; fileRef = 321EC64A1B1C309F00071FA0 /* SJMChche.m */; };
+		321EC64E1B1C381800071FA0 /* MAPrestoClient+SChche.m in Sources */ = {isa = PBXBuildFile; fileRef = 321EC64D1B1C381800071FA0 /* MAPrestoClient+SChche.m */; };
+		321EC6511B1C3D1800071FA0 /* SJMChcheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 321EC6501B1C3D1800071FA0 /* SJMChcheManager.m */; };
 		32D38FC81B1446D400962436 /* MAPrestoClient+Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D38FC71B1446D400962436 /* MAPrestoClient+Account.m */; };
 		32D38FCF1B145EAD00962436 /* MAPrestoClient+Trade.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D38FCE1B145EAD00962436 /* MAPrestoClient+Trade.m */; };
 		32D38FD21B1462EE00962436 /* MAPrestoClient+School.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D38FD11B1462EE00962436 /* MAPrestoClient+School.m */; };
@@ -191,6 +194,12 @@
 		1AF94E6E1B140CAD0052075B /* MAPrestoClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAPrestoClient.m; sourceTree = "<group>"; };
 		1AF94E9B1B140CFE0052075B /* SJMPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJMPrefixHeader.pch; sourceTree = "<group>"; };
 		1BAE6E8194B67F251F716D39 /* Pods-SongJiangMember.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SongJiangMember.release.xcconfig"; path = "Pods/Target Support Files/Pods-SongJiangMember/Pods-SongJiangMember.release.xcconfig"; sourceTree = "<group>"; };
+		321EC6491B1C309F00071FA0 /* SJMChche.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJMChche.h; sourceTree = "<group>"; };
+		321EC64A1B1C309F00071FA0 /* SJMChche.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJMChche.m; sourceTree = "<group>"; };
+		321EC64C1B1C381800071FA0 /* MAPrestoClient+SChche.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MAPrestoClient+SChche.h"; sourceTree = "<group>"; };
+		321EC64D1B1C381800071FA0 /* MAPrestoClient+SChche.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MAPrestoClient+SChche.m"; sourceTree = "<group>"; };
+		321EC64F1B1C3D1800071FA0 /* SJMChcheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJMChcheManager.h; sourceTree = "<group>"; };
+		321EC6501B1C3D1800071FA0 /* SJMChcheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJMChcheManager.m; sourceTree = "<group>"; };
 		32D38FC61B1446D400962436 /* MAPrestoClient+Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MAPrestoClient+Account.h"; path = "SJMExtension/Network/MAPrestoClient+Account.h"; sourceTree = "<group>"; };
 		32D38FC71B1446D400962436 /* MAPrestoClient+Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MAPrestoClient+Account.m"; path = "SJMExtension/Network/MAPrestoClient+Account.m"; sourceTree = "<group>"; };
 		32D38FC91B144B6700962436 /* SJMExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJMExtension.h; sourceTree = "<group>"; };
@@ -257,6 +266,7 @@
 				1AF94E6F1B140CAD0052075B /* Model */,
 				1AF94E711B140CAD0052075B /* View */,
 				1AF94E121B140CAD0052075B /* Controller */,
+				321EC6481B1C304F00071FA0 /* Chche */,
 				1AF94E131B140CAD0052075B /* Extension */,
 				1AF94E351B140CAD0052075B /* Library */,
 				1A0692A41B12BD0700BB583C /* ViewController.h */,
@@ -515,6 +525,17 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		321EC6481B1C304F00071FA0 /* Chche */ = {
+			isa = PBXGroup;
+			children = (
+				321EC6491B1C309F00071FA0 /* SJMChche.h */,
+				321EC64A1B1C309F00071FA0 /* SJMChche.m */,
+				321EC64F1B1C3D1800071FA0 /* SJMChcheManager.h */,
+				321EC6501B1C3D1800071FA0 /* SJMChcheManager.m */,
+			);
+			path = Chche;
+			sourceTree = "<group>";
+		};
 		32D38FC41B14462600962436 /* SJMExtension */ = {
 			isa = PBXGroup;
 			children = (
@@ -541,6 +562,8 @@
 				32D38FDA1B1475E000962436 /* MAPrestoClient+Shop.m */,
 				32D38FDF1B147ED500962436 /* MAPrestoClient+Chat.h */,
 				32D38FE01B147ED500962436 /* MAPrestoClient+Chat.m */,
+				321EC64C1B1C381800071FA0 /* MAPrestoClient+SChche.h */,
+				321EC64D1B1C381800071FA0 /* MAPrestoClient+SChche.m */,
 			);
 			name = Network;
 			sourceTree = "<group>";
@@ -713,9 +736,11 @@
 				32D38FC81B1446D400962436 /* MAPrestoClient+Account.m in Sources */,
 				1AF94E851B140CAD0052075B /* MACameraManager+AuthorizationExtra.m in Sources */,
 				1AF94E921B140CAD0052075B /* MABundleManager.m in Sources */,
+				321EC64B1B1C309F00071FA0 /* SJMChche.m in Sources */,
 				32D38FD81B14722E00962436 /* MAPrestoClient+Bill.m in Sources */,
 				1AF94E801B140CAD0052075B /* UIViewController+Extra.m in Sources */,
 				1AF94E8D1B140CAD0052075B /* MATabbarController.m in Sources */,
+				321EC6511B1C3D1800071FA0 /* SJMChcheManager.m in Sources */,
 				1AF94E7A1B140CAD0052075B /* UIImage+Extra.m in Sources */,
 				1AF94E7E1B140CAD0052075B /* UITextField+Extra.m in Sources */,
 				1AF94E7D1B140CAD0052075B /* UITabBarController+Extra.m in Sources */,
@@ -727,6 +752,7 @@
 				1AF94E871B140CAD0052075B /* MACameraManager+FocusIntrestPointExtra.m in Sources */,
 				1AF94E821B140CAD0052075B /* MACameraController.m in Sources */,
 				1AF94E8F1B140CAD0052075B /* NSBundle+MAExtra.m in Sources */,
+				321EC64E1B1C381800071FA0 /* MAPrestoClient+SChche.m in Sources */,
 				32D38FDB1B1475E000962436 /* MAPrestoClient+Shop.m in Sources */,
 				1AF94E791B140CAD0052075B /* UIFont+Extra.m in Sources */,
 				1AF94E941B140CAD0052075B /* MAZonesManager.m in Sources */,

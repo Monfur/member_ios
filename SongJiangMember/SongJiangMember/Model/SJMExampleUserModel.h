@@ -10,6 +10,9 @@
 
 @interface SJMExampleUserModel : MAModel
 
-@property (nonatomic, strong)NSString *accessToken;
+@property (nonatomic, strong)NSString *lastName;
+
+@property (nonatomic, strong)NSString *firstName;
+
 
 @end

@@ -55,4 +55,6 @@ _Pragma("clang diagnostic ignored \"-Wshadow\"") \
 __strong __typeof__(VAR) VAR = metamacro_concat(VAR, _weak_)\
 _Pragma("clang diagnostic pop")
 
+#define folderNames @"Cache_folders"
+
 #endif

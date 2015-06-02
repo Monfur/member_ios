@@ -16,7 +16,7 @@
                    type:(NSInteger)type
                    page:(NSInteger)page
                   count:(NSInteger)count
-             completion:(void (^)(id))completion;{
+             completion:(void (^)(id))completion{
     NSDictionary *params = @{
                              @"lon":@(lon),
                              @"lat":@(lat),

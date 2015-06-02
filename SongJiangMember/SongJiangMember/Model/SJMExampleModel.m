@@ -12,7 +12,9 @@
 
 + (NSDictionary *)keyValueMapping{
   return @{
+           
            @"users":@"data"
+           
            };
 }
 

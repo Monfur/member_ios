@@ -33,8 +33,15 @@ static MAPrestoClient *instance;
 }
 
 - (void)example:(void(^)(SJMExampleModel *model)) completion{
-  [[MAHttpClient client]get:[@"login" urlPathComponents] class:[SJMExampleModel class] completion:completion];
+  [[MAHttpClient client]get:[@"wangkai_cur" urlPathComponents] class:[SJMExampleModel class] completion:completion];
+    
+    
+    
 }
+
+
+
+
 
 
 

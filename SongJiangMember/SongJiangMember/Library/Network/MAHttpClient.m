@@ -44,7 +44,7 @@ static MAHttpClient *instance;
   if (!_manager) {
     [self setActivityIndicatorVisible:YES];
     _manager = [AFHTTPRequestOperationManager manager];
-    _manager.requestSerializer.timeoutInterval = 30;//time out limit 30s
+    _manager.requestSerializer.timeoutInterval = 1;//time out limit 30s
   }
   return [AFHTTPRequestOperationManager manager];
 }
@@ -135,8 +135,13 @@ static MAHttpClient *instance;
       if (instance && completion) {
         completion(instance);
       }
+    }else{
+      
+        completion(operation.responseData);
     }
+      
   } failure:^(AFHTTPRequestOperation *operation, NSError *httpError) {
+      
     if (error) {
       MAError *maError = [[MAError alloc] init];
       maError.operation = operation;

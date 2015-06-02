@@ -12,7 +12,8 @@
 
 + (NSDictionary *)keyValueMapping{
   return @{
-           @"accessToken":@"access_token"
+           @"lastName":@"lastName",
+           @"firstName":@"firstName",
            };
 }
 
