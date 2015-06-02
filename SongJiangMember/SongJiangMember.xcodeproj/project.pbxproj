@@ -12,6 +12,7 @@
 		1A0692A61B12BD0700BB583C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0692A51B12BD0700BB583C /* ViewController.m */; };
 		1A0692AB1B12BD0700BB583C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A0692AA1B12BD0700BB583C /* Images.xcassets */; };
 		1A0692BA1B12BD0700BB583C /* SongJiangMemberTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0692B91B12BD0700BB583C /* SongJiangMemberTests.m */; };
+		1A334CDC1B1DAABF009E766A /* MAErrorCodeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A334CDB1B1DAABF009E766A /* MAErrorCodeManager.m */; };
 		1A5E99881B141D3800D2FA74 /* NSDictionary+MAPrestoClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5E99871B141D3800D2FA74 /* NSDictionary+MAPrestoClient.m */; };
 		1A5E998F1B14511B00D2FA74 /* SJMAppLauncher.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5E998B1B14511B00D2FA74 /* SJMAppLauncher.m */; };
 		1A5E99921B1451C600D2FA74 /* SJMAppLauncher+Dispatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5E99911B1451C600D2FA74 /* SJMAppLauncher+Dispatch.m */; };
@@ -95,6 +96,8 @@
 		1A0692B31B12BD0700BB583C /* SongJiangMemberTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SongJiangMemberTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A0692B81B12BD0700BB583C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A0692B91B12BD0700BB583C /* SongJiangMemberTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SongJiangMemberTests.m; sourceTree = "<group>"; };
+		1A334CDA1B1DAABF009E766A /* MAErrorCodeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAErrorCodeManager.h; sourceTree = "<group>"; };
+		1A334CDB1B1DAABF009E766A /* MAErrorCodeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAErrorCodeManager.m; sourceTree = "<group>"; };
 		1A5E99861B141D3800D2FA74 /* NSDictionary+MAPrestoClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+MAPrestoClient.h"; sourceTree = "<group>"; };
 		1A5E99871B141D3800D2FA74 /* NSDictionary+MAPrestoClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+MAPrestoClient.m"; sourceTree = "<group>"; };
 		1A5E998A1B14511B00D2FA74 /* SJMAppLauncher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJMAppLauncher.h; sourceTree = "<group>"; };
@@ -496,6 +499,8 @@
 				1AF94E6E1B140CAD0052075B /* MAPrestoClient.m */,
 				1A5E99861B141D3800D2FA74 /* NSDictionary+MAPrestoClient.h */,
 				1A5E99871B141D3800D2FA74 /* NSDictionary+MAPrestoClient.m */,
+				1A334CDA1B1DAABF009E766A /* MAErrorCodeManager.h */,
+				1A334CDB1B1DAABF009E766A /* MAErrorCodeManager.m */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -739,6 +744,7 @@
 				321EC64B1B1C309F00071FA0 /* SJMChche.m in Sources */,
 				32D38FD81B14722E00962436 /* MAPrestoClient+Bill.m in Sources */,
 				1AF94E801B140CAD0052075B /* UIViewController+Extra.m in Sources */,
+				1A334CDC1B1DAABF009E766A /* MAErrorCodeManager.m in Sources */,
 				1AF94E8D1B140CAD0052075B /* MATabbarController.m in Sources */,
 				321EC6511B1C3D1800071FA0 /* SJMChcheManager.m in Sources */,
 				1AF94E7A1B140CAD0052075B /* UIImage+Extra.m in Sources */,

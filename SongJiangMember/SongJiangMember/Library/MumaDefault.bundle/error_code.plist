@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>10001</key>
+	<string>系统错误</string>
+	<key>10002</key>
+	<string>服务暂停</string>
+	<key>10003</key>
+	<string>远程服务错误</string>
+	<key>10004</key>
+	<string>IP限制不能请求该资源</string>
+	<key>10005</key>
+	<string>该资源需要appkey拥有授权</string>
+	<key>10006</key>
+	<string>缺少source (appkey) 参数</string>
+	<key>10007</key>
+	<string>不支持的MediaType (%s)</string>
+	<key>10008</key>
+	<string>参数错误</string>
+	<key>10009</key>
+	<string>任务过多，系统繁忙</string>
+	<key>10010</key>
+	<string>任务超时</string>
+	<key>10012</key>
+	<string>非法请求</string>
+	<key>10013</key>
+	<string>不合法的用户</string>
+	<key>10014</key>
+	<string>应用的接口访问权限受限</string>
+	<key>10015</key>
+	<string>缺失必选参数 (%s)</string>
+	<key>10016</key>
+	<string>参数值非法，需为 (%s)，实际为 (%s)，请参考API文档</string>
+	<key>10017</key>
+	<string>请求长度超过限制</string>
+	<key>10018</key>
+	<string>接口不存在</string>
+	<key>10019</key>
+	<string>请求的HTTP METHOD不支持，请检查是否选择了正确的POST/GET方式</string>
+	<key>10020</key>
+	<string>用户请求特殊接口 (%s) 频次超过上限</string>
+	<key>20001</key>
+	<string>Uid参数为空</string>
+	<key>20002</key>
+	<string>用户不存在</string>
+	<key>20003</key>
+	<string>不支持的图片类型，仅仅支持JPG、PNG</string>
+	<key>20004</key>
+	<string>图片太大</string>
+	<key>20005</key>
+	<string>内容为空</string>
+	<key>20006</key>
+	<string>输入文字太长</string>
+	<key>20007</key>
+	<string>安全检查参数有误，请再调用一次</string>
+<key>20008</key>
+<string>操作过于频繁</string>
+<key>20009</key>
+<string>提交相同的信息</string>
+<key>20010</key>
+<string>包含非法内容</string>
+<key>20011</key>
+<string>此IP地址上的行为异常</string>
+<key>20012</key>
+<string>发布成功，目前服务器可能会有延迟，请耐心等待</string>
+<key>20013</key>
+<string>用户被冻结</string>
+<key>20014</key>
+<string>用户被删除</string>
+<key>20101</key>
+<string>商家类别信息错误</string>
+<key>20102</key>
+<string>没有对应问题的答案</string>
+<key>20103</key>
+<string>提取金额超限</string>
+<key>20104</key>
+<string>金额不足</string>
+<key>20105</key>
+<string>你需要个人信息认真</string>
+<key>20106</key>
+<string>非法手机号</string>
+<key>20107</key>
+<string>修改密码不能相同</string>
+<key>20108</key>
+<string>错误的银行卡号</string>
+<key>20109</key>
+<string>错误的银行卡信息</string>
+<key>20201</key>
+<string>错误的验证码</string>
+<key>20202</key>
+<string>域名不存在</string>
+<key>20203</key>
+<string>用户不存在</string>
+<key>20204</key>
+<string>该手机号已经被使用</string>
+<key>20205</key>
+<string>该用户已经绑定手机</string>
+<key>21301</key>
+<string>认证失败</string>
+<key>21302</key>
+<string>用户名或密码不正确</string>
+<key>21303</key>
+<string>用户名密码认证超过请求限制</string>
+<key>21304</key>
+<string>版本号错误</string>
+<key>21305</key>
+<string>缺少必要的参数</string>
+<key>21306</key>
+<string>OAuth参数被拒绝</string>
+<key>21307</key>
+<string>时间戳不正确</string>
+<key>21308</key>
+<string>参数nonce已经被使用</string>
+<key>21309</key>
+<string>签名值不合法</string>
+<key>21310</key>
+<string>Token已经被使用</string>
+<key>21311</key>
+<string>Token已经过期</string>
+<key>21312</key>
+<string>Token不合法</string>
+<key>21313</key>
+<string>Token不合法</string>
+<key>21314</key>
+<string>授权关系已经被解除</string>
+<key>21315</key>
+<string>使用OAuth2必须使用https</string>
+<key>21316</key>
+<string>token过期</string>
+<key>21517</key>
+<string>参数urls是空的</string>
+<key>21518</key>
+<string>参数urls太多了</string>
+<key>21519</key>
+<string>IP是空值</string>
+<key>21520</key>
+<string>参数url是空值</string>
+<key>21602</key>
+<string>含有敏感词</string>
+<key>21603</key>
+<string>通知发送达到限制</string>
+<key>21701</key>
+<string>提醒失败，需要权限</string>
+<key>21702</key>
+<string>无效分类</string>
+<key>21703</key>
+<string>无效状态码</string>
+<key>21901</key>
+<string>地理信息错误</string>
+</dict>
+</plist>
+
+ 
+
+
+

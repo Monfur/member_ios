@@ -9,6 +9,7 @@
 
 @interface NSBundle (MAExtra)
 
+- (id)getValuesFromPlist:(NSString *)plistName;
 - (id)getValuesFromPlist:(NSString *)plistName key:(NSString *)key;
 - (UIImage *)getImageFromBundle:(NSString *)imageName;
 

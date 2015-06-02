@@ -9,6 +9,12 @@
 
 @implementation NSBundle (MAExtra)
 
+- (id)getValuesFromPlist:(NSString *)plistName{
+  NSURL *url = [self URLForResource:plistName withExtension:@".plist"];
+  NSDictionary *plist = [NSDictionary dictionaryWithContentsOfURL:url];
+  return plist;
+}
+
 - (id)getValuesFromPlist:(NSString *)plistName key:(NSString *)key{
   NSURL *url = [self URLForResource:plistName withExtension:@".plist"];
   NSDictionary *plist = [NSDictionary dictionaryWithContentsOfURL:url];

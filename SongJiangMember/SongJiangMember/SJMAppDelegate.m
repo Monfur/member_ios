@@ -21,6 +21,8 @@
   self.window.rootViewController = [SJMAppLauncher rootMenuController];
   [self.window makeKeyAndVisible];
   
+  [[MAErrorCodeManager manager]errorDescWithCode:10001];
+  
   return YES;
 }
 
